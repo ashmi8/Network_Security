@@ -28,6 +28,7 @@ if __name__ == "__main__":
         data_validation_artifact = data_validation.initiate_data_validation()
         logging.info("Data validation completed")
         logging.info(f"Data validation artifact: {data_validation_artifact}")
+        
         ### Start the data transformation process
         data_transformation_config=DataTransformationConfig(training_pipeline_config)
         logging.info("data Transformation started")
